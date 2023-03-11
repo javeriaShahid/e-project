@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <!-- https://cdnjs.com/libraries/twitter-bootstrap/5.0.0-beta1 -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css" />
+
+    <!-- Icons: https://getbootstrap.com/docs/5.0/extend/icons/ -->
+    <!-- https://cdnjs.com/libraries/font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>bakers bite</title>
+</head>
+
+<body>
+    <!-- navbar  -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+        <div class=" container-fluid">
+            <div class="logo"></div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item ">
+                        <a class="nav-link active" aria-current="page" href="#">cake</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">cookies</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active " href="#" tabindex="-1" aria-disabled="true">donuts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active " href="#" tabindex="-1" aria-disabled="true">cupcake</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active " href="#" tabindex="-1" aria-disabled="true">mugs/glass</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active " href="#" tabindex="-1" aria-disabled="true">about</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            contact
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">contactus</a></li>
+                            <li><a class="dropdown-item" href="#">Faq</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <button><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart" viewBox="0 0 20 20">
+                            <path
+                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                        </svg></button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- sliderrr  -->
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
+        <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
+        <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/SLIDER-1-2.jpg" style="height: 400px;  width: 100%;" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/gh1kZ1410502x.jpg" style="height: 400px ;  width: 100%;" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/SLIDER-2.jpg" style="height: 400px; width: 100%;"  class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </a>
+    </div>
+    <!-- aboutus  -->
+    <div class="para1"></div>
+    <div class="imgd"></div>
+    <div class="para2"></div>
+    <!-- cards  -->
+    <div class="card" style="width: 200px;">
+      <img src="img/ellie-ellien-04yMqTmUeHQ-unsplash.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">......</p>
+        <a href="#" class="btn btn-primary">add to cart</a>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+    <!-- https://cdnjs.com/libraries/popper.js/2.5.4 -->
+    <!-- <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.4/umd/popper.min.js"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.min.js"
+    ></script> -->
+
+    <!-- More: https://getbootstrap.com/docs/5.0/getting-started/introduction/ -->
+</body>
+
+</html>

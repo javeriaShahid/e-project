@@ -1,0 +1,27 @@
+*{
+   font-family:'Times New Roman', Times, serif;
+   font-size: large; 
+}
+.logo{
+    height: 70px;
+    width: 70px;
+    background-color: rgb(209, 204, 134);
+    float: left;
+}
+body{
+
+    background-color: rgb(255, 255, 255);
+}
+
+.nav-item{
+    float: left;
+    margin-left: 75px;
+    padding: 5px;
+}
+.carousel{
+
+}
+ul li a:hover{
+    text-decoration:underline;
+
+}
