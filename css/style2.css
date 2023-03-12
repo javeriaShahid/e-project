@@ -1,0 +1,13 @@
+body{
+    background-color: black;
+    color: whitesmoke;
+    font-family:'Times New Roman', Times, serif;
+}
+#heading{
+    text-decoration: underline;
+    color: #FFFF00;
+}
+#heading:hover{
+    text-decoration: none;
+
+}

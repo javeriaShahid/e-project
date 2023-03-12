@@ -1,27 +1,38 @@
 *{
    font-family:'Times New Roman', Times, serif;
-   font-size: large; 
+   font-size: large;
+    
 }
-.logo{
-    height: 70px;
-    width: 70px;
-    background-color: rgb(209, 204, 134);
-    float: left;
-}
-body{
 
-    background-color: rgb(255, 255, 255);
+body{
+    color: aliceblue;
+    background-color:black;
 }
 
 .nav-item{
     float: left;
     margin-left: 75px;
     padding: 5px;
-}
-.carousel{
 
 }
+
 ul li a:hover{
-    text-decoration:underline;
+    text-decoration:overline;
+}
+
+#ic{
+color: #FFFF00 ;
+}
+#cnt{
+    color: aliceblue;
+}
+#btn2{
+     background-color: #FFFF00;
+     color: black;
+     padding: 10px;
+    border-radius: 12px;
+}
+#btn2:hover{
+    font-weight: bold;
 
 }
