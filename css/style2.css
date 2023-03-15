@@ -1,13 +1,19 @@
+*{
+    font-family:'Courier New', Courier, monospace;
+    padding: 0;
+    margin: 0;
+     
+ }
 body{
     background-color: black;
     color: whitesmoke;
     font-family:'Times New Roman', Times, serif;
-}
+    }
 #heading{
     text-decoration: underline;
-    color: #FFFF00;
-}
-#heading:hover{
-    text-decoration: none;
+    color: #ffffff;
+    background-color: #875c41;
+    width: 100%;
+    padding: 0;
 
 }
