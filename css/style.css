@@ -36,3 +36,48 @@ color: #FFFF00 ;
     font-weight: bold;
 
 }
+.aboutus {
+    text-align: center;
+   margin-top: 100px;
+}
+.img {
+    width: 90%;
+    height: 50px;
+    text-align: center;
+   padding-bottom: 25px;
+   display:block;
+   padding: 10px 30px;
+  
+  
+   
+    
+
+}
+.p{
+    text-align: left;
+    padding-left: 30px;
+    width: 50%;
+   height: 0px;
+   margin-left: 120px;
+   margin-right: 210%;
+   padding-inline-end: 300px;
+ 
+}
+ul{
+    display: table;
+    margin-left: 80%;
+    text-align: left;
+  display: inline-block;
+    width: 100%;
+    height: 30px;
+   ;
+   
+    
+    
+}
+.h2{
+    text-align: right;
+    margin-right: 20%;
+   
+   
+}
