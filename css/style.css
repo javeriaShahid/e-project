@@ -76,10 +76,10 @@ color: #FFFF00 ;
 :root {
   --color1: rgb(0, 231, 255);
   --color2: rgb(255, 0, 231);
-  --back: url(https://cdn2.bulbagarden.net/upload/1/17/Cardback.jpg);
+  /* --back: url(../cookies/bruna-branco-2UfJPzlEKqg-unsplash.jpg); */
   --charizard1: #fac;
   --charizard2: #ddccaa;
-  --charizardfront: url(https://assets.codepen.io/13471/charizard-gx.webp);
+  --charizardfront: url(../cookies/christina-branco-7P-wc2Z2Ujs-unsplash.jpg);
   --pika1: #54a29e;
   --pika2: #a79d66;
   --pikafront: url(https://assets.codepen.io/13471/pikachu-gx.webp);
@@ -96,7 +96,7 @@ color: #FFFF00 ;
 .card {
 
   width: 71.5vw;
-  height: 100vw;
+  height: 20vw;
     // width: clamp(200px, 61vh, 18vw);
     // height: clamp(280px, 85vh, 25.2vw);
   @media screen and (min-width: 600px) {
@@ -142,8 +142,8 @@ color: #FFFF00 ;
     20px 20px 30px -25px var(--color2), 
     -7px -7px 10px -5px var(--color1), 
     7px 7px 10px -5px var(--color2), 
-    0 0 13px 4px rgba(255,255,255,0.3),
-    0 55px 35px -20px rgba(0, 0, 0, 0.5);
+    0 0 13px 4px rgba(255, 255, 255, 0.3),
+    0 55px 35px -20px rgba(73, 73, 73, 0.5);
 }
 
 .card.charizard {
@@ -170,51 +170,6 @@ color: #FFFF00 ;
   --front: var(--eeveefront);
 }
 
-.card:before,
-.card:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  background-repeat: no-repeat;
-  opacity: .5;
-  mix-blend-mode: color-dodge;
-  transition: all .33s ease;
-}
-
-.card:before {
-  background-position: 50% 50%;
-  background-size: 300% 300%;
-  background-image: linear-gradient(
-    115deg,
-    transparent 0%,
-    var(--color1) 25%,
-    transparent 47%,
-    transparent 53%,
-    var(--color2) 75%,
-    transparent 100%
-  );
-  opacity: .5;
-  filter: brightness(.5) contrast(1);
-  z-index: 1;
-}
-
-.card:after {
-  opacity: 1;
-  background-image: url("https://assets.codepen.io/13471/sparkles.gif"), 
-    url(https://assets.codepen.io/13471/holo.png), 
-    linear-gradient(125deg, #ff008450 15%, #fca40040 30%, #ffff0030 40%, #00ff8a20 60%, #00cfff40 70%, #cc4cfa50 85%);
-  background-position: 50% 50%;
-  background-size: 160%;
-  background-blend-mode: overlay;
-  z-index: 2;
-  filter: brightness(1) contrast(1);
-  transition: all .33s ease;
-  mix-blend-mode: color-dodge;
-  opacity: .75;
-}
 
 .card.active:after,
 .card:hover:after {
@@ -357,10 +312,7 @@ color: #FFFF00 ;
 
 
 
-.demo .card {
-  background-image: var(--back);
-  font-size: 2vh
-}
+
 .demo .card > span {
   position: relative;
   top: 45%;
@@ -408,14 +360,14 @@ color: #FFFF00 ;
 
 html, body {
   height: 100%;
-  background-color: #333844;
+  background-color: #000000;
   padding: 0;
   z-index: 1;
   transform: translate3d(0,0,0.1px);
 }
 body {
   color: white;
-  background-color: #333844;
+  background-color: #000000;
   font-family: "Heebo", sans-serif;
   text-align: center;
 }
