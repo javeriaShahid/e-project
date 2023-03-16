@@ -8,6 +8,9 @@ body{
     background-color: black;
     color: whitesmoke;
     font-family:'Times New Roman', Times, serif;
+    background-image: url(../img/bakery-flat-lay-photography-n0dtv3j3l7pmtgek.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     }
 #heading{
     text-decoration: underline;
@@ -15,5 +18,4 @@ body{
     background-color: #875c41;
     width: 100%;
     padding: 0;
-
 }
