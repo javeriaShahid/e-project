@@ -58,9 +58,9 @@ color: #FFFF00 ;
     padding-left: 30px;
     width: 50%;
    height: 0px;
-   margin-left: 120px;
-   margin-right: 210%;
-   padding-inline-end: 300px;
+   margin-left: 100px;
+   margin-right: 140%;
+   padding-inline-end: 350px;
  
 }
 ul{
@@ -81,3 +81,26 @@ ul{
    
    
 }
+.card{
+    width: 190px;
+   margin-left: 20px;
+   color: aliceblue;
+   background-color:black;
+   margin-top: 70px;
+   
+}
+.card-title{
+    text-align: center;
+    text-transform: capitalize;
+}
+.button {
+    
+    background-color: darkgoldenrod;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+     transition-duration: 0.4s;
+   
+  }
+    
