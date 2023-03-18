@@ -91,15 +91,22 @@ ul li a:hover {
   width: 300px;
   height: 300px;
   margin-left: 100px;
-  top: 0;
+  margin-top:50px;
+  float: left;
+  position: absolute;
+  margin-top: -300px;
+  /* margin-left: 300px;   */
 
 }
 
 .ull {
-  margin-left: 70%;
+  /* margin-left: 70%; */
   text-align: left;
   display: inline-block;
   width: 300px;
+  position: absolute;
+  margin-top: -300px;
+  margin-left: 300px;
 }
 :root {
   --color1: rgb(0, 231, 255);
