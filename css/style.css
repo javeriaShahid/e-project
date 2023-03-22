@@ -1,5 +1,5 @@
 * {
-  font-family: serif;
+	font-family:"Open Sans", Helvetica, Arial, sans-serif;
   font-size: 20px;
 
 }
@@ -61,54 +61,127 @@ ul li a:hover {
   color: #ffffff;
 }
 
+/* CONTACT  */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,900,300,300);
 
-#ic {
-  color: #FFFF00;
+* {
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-font-smoothing:antialiased;
+	-moz-font-smoothing:antialiased;
+	-o-font-smoothing:antialiased;
+	font-smoothing:antialiased;
+	text-rendering:optimizeLegibility;
 }
 
-#cnt {
-  color: aliceblue;
+body {
+	font-family:"Open Sans", Helvetica, Arial, sans-serif;
+	font-weight:300;
+	font-size: 12px;
+	line-height:30px;
+	color:gold;
+	background:black;
 }
 
-#btn2 {
-  background-color: #875c41;
-  color: whitesmoke;
-  border-color: whitesmoke;
-  padding: 10px;
-  border-radius: 12px;
+.container {
+	max-width:400px;
+	width:100%;
+	margin:0 auto;
+	position:relative;
 }
 
-#btn2:hover {
-  font-weight: bold;
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
+
+#contact {
+	background:black;
+	padding:25px;
+	margin:20px 0;
 }
 
-/* .aboutus {
-  text-align: center;
-  margin-top: 30px;
+#contact h3 {
+	color:gold;
+	display: block;
+	font-size: 30px;
+	font-weight: 400;
 }
 
-.pp {
-  text-align: left;
-  width: 300px;
-  height: 300px;
-  margin-left: 100px;
-  margin-top: 50px;
-  float: left;
-  position: absolute;
-  margin-top: -300px;
-  /* margin-left: 300px;   */
+#contact h4 {
+	margin:5px 0 15px;
+	display:block;
+	font-size:13px;
+}
 
-/* } */
+fieldset {
+	border: medium none !important;
+	margin: 0 0 10px;
+	min-width: 100%;
+	padding: 0;
+	width: 100%;
+}
 
-/* .ull {
-  /* margin-left: 70%; */
-  /* text-align: left;
-  display: inline-block;
-  width: 300px;
-  position: absolute;
-  margin-top: -300px;
-  margin-left: 300px;
-} */ 
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
+	width:100%;
+	border:1px solid #CCC;
+	background:#DCDCDC;
+	margin:0 0 5px;
+	padding:10px;
+}
+
+#contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact input[type="tel"]:hover, #contact input[type="url"]:hover, #contact textarea:hover {
+	-webkit-transition:border-color 0.3s ease-in-out;
+	-moz-transition:border-color 0.3s ease-in-out;
+	transition:border-color 0.3s ease-in-out;
+	border:1px solid #AAA;
+}
+
+#contact textarea {
+	height:100px;
+	max-width:100%;
+  resize:none;
+}
+
+#contact button[type="submit"] {
+	cursor:pointer;
+	width:100%;
+	border:none;
+	background:gold;
+	color:black;
+	margin:0 0 5px;
+	padding:10px;
+	font-size:15px;
+}
+
+#contact button[type="submit"]:hover {
+	background:rgb(254, 255, 255);
+	/* -webkit-transition:background 0.3s ease-in-out; */
+	/* -moz-transition:background 0.3s ease-in-out; */
+	/* transition:background-color 0.3s ease-in-out; */
+}
+
+#contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
+
+#contact input:focus, #contact textarea:focus {
+	outline:0;
+	border:1px solid #999;
+}
+::-webkit-input-placeholder {
+ color:#888;
+}
+:-moz-placeholder {
+ color:#888;
+}
+::-moz-placeholder {
+ color:#888;
+}
+:-ms-input-placeholder {
+ color:#888;
+}
+
+ 
+/* ABOUT  */
 
 .about {
   padding: 130px 0;
@@ -466,13 +539,13 @@ main {
 }
 
 .box:hover i {
-  color: dodgerblue;
+  color: gold;
   transform: rotate(360deg);
 }
 
 /* ANOTHER CARDS  */
 :root {
-  --background-dark: #2d3548;
+  --background-dark: #3b2d48;
   --text-light: rgba(255, 255, 255, 0.6);
   --text-lighter: rgba(255, 255, 255, 0.9);
   --spacing-s: 8px;
@@ -525,7 +598,14 @@ body {
   justify-content: center;
   padding: var(--spacing-xxl) var(--spacing-l);
 }
-
+.hero-section4 {
+  align-items: flex-start;
+  background-image: linear-gradient(15deg, #000000 0%, #000000 150%);
+  display: flex;
+  min-height: 100%;
+  justify-content: center;
+  padding: var(--spacing-xxl) var(--spacing-l);
+}
 .card-grid {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -868,13 +948,6 @@ selector when using Javascript to add class ends .rating-star-line {
   top: 1px;
   width: 100px;
   }
-  
-  
-  
-  
-  
-  
-  
   
   
   
