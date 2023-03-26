@@ -18,11 +18,89 @@
   <title>bakerz bite</title>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
+   <!-- ======= Header ======= -->
+   <header id="header" class="header d-flex align-items-center">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1>Bakerz Bite<span>.</span></h1>
+      </a>
+
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">most popular</a></li>
+          <li><a href="#">Category</a></li>
+          <li><a href="#">cake</a></li>
+          <li class="dropdown"><a href="#"><span>testimonials</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="#">contact</a></li>
+              <!-- <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a> 
+                <ul>
+                  <li><a href="#">Deep Dropdown 1</a>jhj</li>
+                  <li><a href="#">Deep Dropdown 2</a></li>
+                  <li><a href="#">Deep Dropdown 3</a></li>
+                  <li><a href="#">Deep Dropdown 4</a></li>
+                  <li><a href="#">Deep Dropdown 5</a></li>
+                </ul> -->
+              </li>
+              <li><a href="#">location</a></li>
+              <li><a href="#">rating</a></li>
+              <li><a href="#">essentials</a></li>
+            </ul>
+          </li>
+          <!-- <li><a href="#"></a></li> -->
+        </ul>
+      </nav>
+      <!-- .navbar -->
+
+    </div>
+  </header>
+  <!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="hero">
+
+
+
+    <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+
+      <div class="carousel-item active" style="background-image: url(img/223d70dfa1d08b02a67d7c10702d9118-hd4.jpg)"></div>
+      <div class="carousel-item" style="background-image: url(cakes/swapnil-dwivedi-Nl8Oa6ZuNcA-unsplash.jpg)"></div>
+      <div class="carousel-item" style="background-image: url(cakes/syed-maaz-QLSh4y2v93c-unsplash.jpg)"></div>
+      <div class="carousel-item" style="background-image: url(cakes/kaouther-djouada-hcEDfkiVmMI-unsplash.jpg)"></div>
+      <div class="carousel-item" style="background-image: url(cakes/slashio-photography-T5KPTbbK-_E-unsplash.jpg)"></div>
+
+      <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+      </a>
+
+      <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+      </a>
+
+    </div>
+
+  </section>
+  <!-- End Hero Section -->
   <!-- navbar  -->
-  <nav class="navbar navbar-expand-lg navbar-dark shadow-5-strong">
+  <!-- <nav class="navbar navbar-expand-lg navbar-dark shadow-5-strong">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">bakerz bite</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
@@ -55,7 +133,7 @@
           <li class="nav-item">
             <a class="nav-link active" href="#">our Locations</a>
           </li>
-        </ul>
+        </ul> -->
        
         <!-- 
         <button id="cart"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
@@ -71,11 +149,11 @@
   </nav>
 
   <!-- BACKGROUND IMAGE JAVERIA  -->
-
+<!-- 
 
   <div class="bg">
     <img src="img/223d70dfa1d08b02a67d7c10702d9118-hd4.jpg" alt="">
-  </div>
+  </div> -->
 
   <!-- BACKGROUND IMAGE JAVERIA  -->
 
@@ -569,6 +647,7 @@
   <div class="wrapper">
 
     <div class="box">
+
       <i class="fa fa-envelope" aria-hidden="true"></i>
     </div>
 
@@ -588,7 +667,7 @@
     </section>
     <section>
     <span><i class="fa fa-phone"></i></span>
-    <span>(21) 7964 7964 </span>
+    <span>(+021) 7964 7964 </span>
     </section>
     <section>
     <span><i class="fa fa-envelope"></i></span>
@@ -598,22 +677,22 @@
     <span class="border-shape"></span>
     <div class="bottom_content">
     <section>
-    <a href="#"><i class="fa fa-facebook"></i></a>
-    <a href="#"><i class="fa fa-instagram"></i></a>
-    <a href="#"><i class="fa fa-twitter"></i></a>
-    <a href="#"><i class="fa fa-telegram"></i></a>
+    <a href="https://www.facebook.com/index.php"><i class="fa fa-facebook"></i></a>
+    <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+    <a href="https://twitter.com/i/flow/login"><i class="fa fa-twitter"></i></a>
+    <a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
     </section>
     <section>
     <a href="#">Home</a>
     <a href="#">About us</a>
     <a href="#">Order</a>
-    <a href="#">Retail</a>
+    <!-- <a href="#">Retail</a> -->
     <a href="#">FAQ</a>
     <a href="#">Contact Us</a>
     </section>
     </div>
     <div class="copyright">
-    Copyright © 2021 websitename - All rights reserved 
+    Copyright © 2023 Bakerz Bite - All rights reserved 
     </div>
     </footer>
 
@@ -653,7 +732,104 @@
 
   <!-- More: https://getbootstrap.com/docs/5.0/getting-started/introduction/ -->
 
+<script>
+/**
+* Template Name: UpConstruction
+* Updated: Mar 10 2023 with Bootstrap v5.2.3
+* Template URL: https://bootstrapmade.com/upconstruction-bootstrap-construction-website-template/
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+*/
+document.addEventListener('DOMContentLoaded', () => {
+  "use strict";
 
+  /**
+   * Preloader
+   */
+  const preloader = document.querySelector('#preloader');
+  if (preloader) {
+    window.addEventListener('load', () => {
+      preloader.remove();
+    });
+  }
+
+  /**
+   * Mobile nav toggle
+   */
+
+  const mobileNavShow = document.querySelector('.mobile-nav-show');
+  const mobileNavHide = document.querySelector('.mobile-nav-hide');
+
+  document.querySelectorAll('.mobile-nav-toggle').forEach(el => {
+    el.addEventListener('click', function(event) {
+      event.preventDefault();
+      mobileNavToogle();
+    })
+  });
+
+  function mobileNavToogle() {
+    document.querySelector('body').classList.toggle('mobile-nav-active');
+    mobileNavShow.classList.toggle('d-none');
+    mobileNavHide.classList.toggle('d-none');
+  }
+
+  /**
+   * Hide mobile nav on same-page/hash links
+   */
+  document.querySelectorAll('#navbar a').forEach(navbarlink => {
+
+    if (!navbarlink.hash) return;
+
+    let section = document.querySelector(navbarlink.hash);
+    if (!section) return;
+
+    navbarlink.addEventListener('click', () => {
+      if (document.querySelector('.mobile-nav-active')) {
+        mobileNavToogle();
+      }
+    });
+
+  });
+
+  /**
+   * Toggle mobile nav dropdowns
+   */
+  const navDropdowns = document.querySelectorAll('.navbar .dropdown > a');
+
+  navDropdowns.forEach(el => {
+    el.addEventListener('click', function(event) {
+      if (document.querySelector('.mobile-nav-active')) {
+        event.preventDefault();
+        this.classList.toggle('active');
+        this.nextElementSibling.classList.toggle('dropdown-active');
+
+        let dropDownIndicator = this.querySelector('.dropdown-indicator');
+        dropDownIndicator.classList.toggle('bi-chevron-up');
+        dropDownIndicator.classList.toggle('bi-chevron-down');
+      }
+    })
+  });
+
+  /**
+   * Scroll top button
+   */
+  const scrollTop = document.querySelector('.scroll-top');
+  if (scrollTop) {
+    const togglescrollTop = function() {
+      window.scrollY > 100 ? scrollTop.classList.add('active') : scrollTop.classList.remove('active');
+    }
+    window.addEventListener('load', togglescrollTop);
+    document.addEventListener('scroll', togglescrollTop);
+    scrollTop.addEventListener('click', window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    }));
+  }
+
+
+
+ 
+});</script>
 
   <!-- carddd  -->
   <script>
