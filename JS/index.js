@@ -173,3 +173,5 @@ document.addEventListener('DOMContentLoaded', () => {
         $card.addClass("animated");
       }, 2500);
     });
+    // map 
+    

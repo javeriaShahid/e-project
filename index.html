@@ -20,7 +20,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <meta content="" name="description">
   <meta content="" name="keywords">
-<script src="js/index.js"></script>
+  <script src="js/index.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+
 </head>
 
 <body>
@@ -35,37 +37,27 @@
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
       <nav id="navbar" class="navbar">
-         <a href="./index.html"></a>
+        <a href="./index.html"></a>
         <ul class="navlist">
           <li><a href="index.html">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#mostpopular">most popular</a></li>
-      
+
 
           <li><a href="#category">Category</a></li>
           <li><a href="#Cake">cake</a></li>
-          <li class="dropdown"><a href="#testimonials"><span>testimonials</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+          <li class="dropdown"><a href="#testimonials"><span>testimonials</span> <i
+                class="bi bi-chevron-down dropdown-indicator"></i></a>
 
             <ul>
-              <li><a href="#contact">contact</a></li> 
-              
-              <!-- <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a> 
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a>jhj</li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul> -->
-
-              </li>
-              <li><a href="#location">location</a></li>
-              <li><a href="#rating">rating</a></li>
-              <li><a href="#essentials">essentials</a></li>
-              <!-- <li><a href="#FAQ">FAQ</a></li> -->
-            </ul>
+              <li><a href="#contact">contact</a></li>
           </li>
-      
+          <li><a href="#location">location</a></li>
+          <li><a href="#rating">rating</a></li>
+          <li><a href="#category">essentials</a></li>
+        </ul>
+        </li>
+
       </nav>
       <!-- .navbar -->
 
@@ -134,58 +126,58 @@
           <br>
         </p>
       </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6" id="zoom">
+        <img src="img/840379-Sweets-Cakes-Chocolate-Cookies-Black-background.jpg" style="border-radius: 20px;" alt="..."
+          class="img-fluid">
       </div>
-      <div class="row">
-        <div class="col-lg-6" id="zoom">
-          <img src="img/840379-Sweets-Cakes-Chocolate-Cookies-Black-background.jpg" style="border-radius: 20px;"
-            alt="..." class="img-fluid">
-        </div>
-        <div class="col-lg-6">
-          <h3>Bakery in the heart of Pakistan</h3>
-          <p>"Starting from a bakery in the heart of Pakistan. Our bakery journey took a fast track and we became one of
-            the
-            finest Customised Dessert Shop. We have gain our place in Customised Cakery market by giving worlds trendy
-            Cakes
-            with taste and perfection. Our perfection is our pride."</p>
-          <div class="row">
-            <div class="col-md-6">
-              <h4>
-                <i class="far fa-star"></i>Original Recipes
-              </h4>
-            </div>
-            <div class="col-md-6">
-              <h4>
-                <i class="far fa-star"></i>
-                Quality Food
-              </h4>
-            </div>
-            <div class="col-md-6">
-              <h4>
-                <i class="far fa-star"></i>Fast Delivery
-              </h4>
-            </div>
-            <div class="col-md-6">
-              <h4>
-                <i class="far fa-star"></i>
-                Customize Cakes
-              </h4>
-            </div>
-            <div class="col-md-6">
-              <h4>
-                <i class="far fa-star"></i>Innovative Products
-              </h4>
-            </div>
-            <div class="col-md-6">
-              <h4>
-                <i class="far fa-star"></i>
+      <div class="col-lg-6">
+        <h3>Bakery in the heart of Pakistan</h3>
+        <p>"Starting from a bakery in the heart of Pakistan. Our bakery journey took a fast track and we became one of
+          the
+          finest Customised Dessert Shop. We have gain our place in Customised Cakery market by giving worlds trendy
+          Cakes
+          with taste and perfection. Our perfection is our pride."</p>
+        <div class="row">
+          <div class="col-md-6">
+            <h4>
+              <i class="far fa-star"></i>Original Recipes
+            </h4>
+          </div>
+          <div class="col-md-6">
+            <h4>
+              <i class="far fa-star"></i>
+              Quality Food
+            </h4>
+          </div>
+          <div class="col-md-6">
+            <h4>
+              <i class="far fa-star"></i>Fast Delivery
+            </h4>
+          </div>
+          <div class="col-md-6">
+            <h4>
+              <i class="far fa-star"></i>
+              Customize Cakes
+            </h4>
+          </div>
+          <div class="col-md-6">
+            <h4>
+              <i class="far fa-star"></i>Innovative Products
+            </h4>
+          </div>
+          <div class="col-md-6">
+            <h4>
+              <i class="far fa-star"></i>
 
-                100% renewable energy
-              </h4>
-            </div>
+              100% renewable energy
+            </h4>
           </div>
         </div>
       </div>
     </div>
+  </div>
   </section>
 
   <!-- aboutus farwa end -->
@@ -197,19 +189,21 @@
 
   <!-- all carousel  -->
 
-  <div class="container" id="mostpopular">
-    <h1 class="allc">most popular</h1>
+  <div class="container" id="category">
+    <h1 class="allc">CATEGORY</h1>
     <div class='carouselContainer'></div>
   </div>
   <!-- all carousel  -->
 
 
   <!-- <main id=app> -->
-     <div id="category">
-    <h1>Category</h1>
+  <div id="mostpopular">
+    <h1>MOST POPULAR</h1>
 
     <section class="cards">
-      <div class="card charizard animated"><h3 class="heading">Chocolate Sprinkle</h3></div>
+      <div class="card charizard animated">
+        <h3 class="heading">Chocolate Sprinkle</h3>
+      </div>
       <div class="card pika animated"></div>
       <div class="card eevee animated"></div>
       <div class="card mewtwo animated"></div>
@@ -217,10 +211,10 @@
     </section>
 
 
-  </main>
+    </main>
 
-  <!-- </main> -->
-</div>
+    <!-- </main> -->
+  </div>
   <!-- cards  -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
 
@@ -434,119 +428,132 @@
 
   </section>
   <div id="Cake">
-  <h1>Cake</h1>
-  <section class="hero-section4">
-    <div class="card-grid">
-      <a class="card" href="#">
-        <div class="card__background"
-          style="background-image: url(./cakes/american-heritage-chocolate-5K5Nc3AGF1w-unsplash.jpg)">
-        </div>
-        <div class="card__content">
-          <p class="card__category">Category</p>
-          <h3 class="card__heading">three Milk Chocolate</h3>
-        </div>
-      </a>
-      <a class="card" href="#">
-        <div class="card__background"
-          style="background-image: url(./cakes/american-heritage-chocolate-vdx5hPQhXFk-unsplash.jpg)"></div>
-        <div class="card__content">
-          <p class="card__category">Category</p>
-          <h3 class="card__heading">Vanilla Chocolate</h3>
-        </div>
-      </a>
-      <a class="card" href="#">
-        <div class="card__background" style="background-image: url(./cakes/annie-spratt-6SHd7Q-l1UQ-unsplash.jpg)">
-        </div>
-        <div class="card__content">
-          <p class="card__category">Category</p>
-          <h3 class="card__heading">Rainbow cake</h3>
-        </div>
-        </li>
+    <h1>CAKE</h1>
+    <section class="hero-section4">
+      <div class="card-grid">
         <a class="card" href="#">
-          <div class="card__background" style="background-image: url(./cakes/david-holifield-kPxsqUGneXQ-unsplash.jpg)">
+          <div class="card__background"
+            style="background-image: url(./cakes/american-heritage-chocolate-5K5Nc3AGF1w-unsplash.jpg)">
           </div>
           <div class="card__content">
             <p class="card__category">Category</p>
-            <h3 class="card__heading">Chocolate Cake</h3>
-          </div>
-        </a>
-        <a class="card" href="#">
-          <div class="card__background" style="background-image: url(./cakes/deva-williamson-tW0Ix_Ajg6Y-unsplash.jpg)">
-          </div>
-          <div class="card__content">
-            <p class="card__category">Category</p>
-            <h3 class="card__heading">Strawberry Cake</h3>
+            <h3 class="card__heading">three Milk Chocolate</h3>
           </div>
         </a>
         <a class="card" href="#">
           <div class="card__background"
-            style="background-image: url(./cakes/food-photographer-jennifer-pallian-gRZYR210m0U-unsplash.jpg)"></div>
+            style="background-image: url(./cakes/american-heritage-chocolate-vdx5hPQhXFk-unsplash.jpg)"></div>
           <div class="card__content">
             <p class="card__category">Category</p>
-            <h3 class="card__heading">Dark Chocolate</h3>
+            <h3 class="card__heading">Vanilla Chocolate</h3>
           </div>
         </a>
         <a class="card" href="#">
-          <div class="card__background"
-            style="background-image: url(./cakes/kaouther-djouada-hcEDfkiVmMI-unsplash.jpg)"></div>
+          <div class="card__background" style="background-image: url(./cakes/annie-spratt-6SHd7Q-l1UQ-unsplash.jpg)">
+          </div>
           <div class="card__content">
             <p class="card__category">Category</p>
-            <h3 class="card__heading">Triple Chocolate</h3>
+            <h3 class="card__heading">Rainbow cake</h3>
           </div>
-        </a>
-        <a class="card" href="#">
-          <div class="card__background"
-            style="background-image: url(./cakes/slashio-photography-T5KPTbbK-_E-unsplash.jpg)"></div>
-          <div class="card__content">
-            <p class="card__category">Category</p>
-            <h3 class="card__heading">Lemon Chocolate</h3>
+          </li>
+          <a class="card" href="#">
+            <div class="card__background"
+              style="background-image: url(./cakes/david-holifield-kPxsqUGneXQ-unsplash.jpg)">
+            </div>
+            <div class="card__content">
+              <p class="card__category">Category</p>
+              <h3 class="card__heading">Chocolate Cake</h3>
+            </div>
+          </a>
+          <a class="card" href="#">
+            <div class="card__background"
+              style="background-image: url(./cakes/deva-williamson-tW0Ix_Ajg6Y-unsplash.jpg)">
+            </div>
+            <div class="card__content">
+              <p class="card__category">Category</p>
+              <h3 class="card__heading">Strawberry Cake</h3>
+            </div>
+          </a>
+          <a class="card" href="#">
+            <div class="card__background"
+              style="background-image: url(./cakes/food-photographer-jennifer-pallian-gRZYR210m0U-unsplash.jpg)"></div>
+            <div class="card__content">
+              <p class="card__category">Category</p>
+              <h3 class="card__heading">Dark Chocolate</h3>
+            </div>
+          </a>
+          <a class="card" href="#">
+            <div class="card__background"
+              style="background-image: url(./cakes/kaouther-djouada-hcEDfkiVmMI-unsplash.jpg)"></div>
+            <div class="card__content">
+              <p class="card__category">Category</p>
+              <h3 class="card__heading">Triple Chocolate</h3>
+            </div>
+          </a>
+          <a class="card" href="#">
+            <div class="card__background"
+              style="background-image: url(./cakes/slashio-photography-T5KPTbbK-_E-unsplash.jpg)"></div>
+            <div class="card__content">
+              <p class="card__category">Category</p>
+              <h3 class="card__heading">Lemon Chocolate</h3>
+            </div>
+          </a>
+          <div>
           </div>
-        </a>
-        <div>
+    </section>
+    </main>
+
+    <!-- section card end  -->
+    <!-- all carousel  -->
+
+
+    <!-- section card javeria end  -->
+    <!-- map  -->
+    <div class="loc" id="location">location</div>
+    <div class="responsive-map">
+
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2822.7806761080233!2d-93.29138368446431!3d44.96844997909819!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52b32b6ee2c87c91%3A0xc20dff2748d2bd92!2sWalker+Art+Center!5e0!3m2!1sen!2sus!4v1514524647889"
+        width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+
+
+
+    <!-- map  -->
+
+    <!-- Contactus javeria  -->
+
+    <div class="containerr">
+
+      <div id="contact">
+        <div class="container">
+          <form id="contact" action="" method="post">
+            <h3>Contact</h3>
+            <h4>Contact us today, and get reply with in 24 hours!</h4>
+            <fieldset>
+              <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+            </fieldset>
+            <fieldset>
+              <input placeholder="Your Email Address" type="email" tabindex="2" required>
+            </fieldset>
+            <fieldset>
+              <input placeholder="Your Phone Number" type="tel" tabindex="3" required>
+            </fieldset>
+            <fieldset>
+              <textarea placeholder="Type your Message Here...." tabindex="5" required></textarea>
+            </fieldset>
+            <fieldset>
+              <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+            </fieldset>
+          </form>
+
         </div>
-  </section>
-  </main>
+      </div>
 
-  <!-- section card end  -->
-  <!-- all carousel  -->
+      <!--Section: Contact javeria end-->
 
-
-  <!-- section card javeria end  -->
-
-  
-  <!-- Contactus javeria  -->
-
-  <div class="containerr">
-
-   <div id="contact">
-  <div class="container">  
-    <form id="contact" action="" method="post">
-      <h3>Contact</h3>
-      <h4>Contact us today, and get reply with in 24 hours!</h4>
-      <fieldset>
-        <input placeholder="Your name" type="text" tabindex="1" required autofocus>
-      </fieldset>
-      <fieldset>
-        <input placeholder="Your Email Address" type="email" tabindex="2" required>
-      </fieldset>
-      <fieldset>
-        <input placeholder="Your Phone Number" type="tel" tabindex="3" required>
-      </fieldset>
-      <fieldset>
-        <textarea placeholder="Type your Message Here...." tabindex="5" required></textarea>
-      </fieldset>
-      <fieldset>
-        <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
-      </fieldset>
-    </form>
-
-  </div>
-  </div>
-  
-  <!--Section: Contact javeria end-->
-
-  <!-- rating reviews  -->
-  <!-- <div id="rating">
+      <!-- rating reviews  -->
+      <!-- <div id="rating">
   <div class="outer">
     <div class="ratings-box">
       <div class="ratings-box__item">
@@ -612,342 +619,328 @@
     </div>
   </div>
   </div> -->
-  <!-- rating reviews end  -->
+      <!-- rating reviews end  -->
 
 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
-
-  <div class="wrapper">
-
-    <div class="box">
-
-      <i class="fa fa-envelope" aria-hidden="true"></i>
-    </div>
-
-  </div>
-
-  <!-- locatiom  -->
-
-  
-  <!-- section footer Farwa start  -->
-     
-  <footer>
-    <div class="top_header">
-    <section>
-    <span><i class="fa fa-map-marker"></i></span>
-    <span> DHA Block-4, Sindh, Karachi, 75500</span>
-    </section>
-    <section>
-    <span><i class="fa fa-phone"></i></span>
-    <span>(+021) 7964 7964 </span>
-    </section>
-    <section>
-    <span><i class="fa fa-envelope"></i></span>
-    <span>Bakersbite@gmail.com</span>
-    </section>
-    </div>
-    <span class="border-shape"></span>
-    <div class="bottom_content">
-    <section>
-    <a href="https://www.facebook.com/index.php"><i class="fa fa-facebook"></i></a>
-    <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
-    <a href="https://twitter.com/i/flow/login"><i class="fa fa-twitter"></i></a>
-    <a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
-    </section>
-    <section>
-    <a href="./index.html">Home</a>
-    <a href="#">About us</a>
-    <a href="#">Order</a>
-    <!-- <a href="#">Retail</a> -->
-    <a href="./faq.html">FAQ</a>
-    <a href="#">Contact Us</a>
-    </section>
-    </div>
-    <div class="copyright">
-      Copyright © 2023 Bakerz Bite - All rights reserved
-    </div>
-  </footer>
-
-  <!-- section footer Farwa end -->
-
-
-  <!-- Optional JavaScript; choose one of the two! -->
-
-  <!-- Option 1: Bootstrap Bundle with Popper -->
-  <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Option 2: Separate Popper and Bootstrap JS -->
-
-  <!-- https://cdnjs.com/libraries/popper.js/2.5.4 -->
-  <!-- <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.4/umd/popper.min.js"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.min.js"
-    ></script> -->
-
-  <!-- More: https://getbootstrap.com/docs/5.0/getting-started/introduction/ -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
 
- 
-  <script>
-    console.clear();
-    console.log(Math.random());
+      <div class="wrapper">
 
-    var Tripousel = function (options) {
-      // because `this` is a bitch
-      var _this = this;
+        <div class="box">
 
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+        </div>
 
-      // Initialize public variables
-      _this.target = options.target || document.body;
-      _this.items = options.items || [];
-      _this.animDuration = options.duration || 500;
-      _this.container = document.createElement('div');
-      _this.center = 0;
-      _this.left = _this.items.length - 1;
-      _this.right = 1;
+      </div>
+
+      <!-- locatiom  -->
 
 
-      // Animate carousel movement
-      _this.slide = function (dir) {
-        var
-          inViewRight = _this.container.querySelector('.carousel__panel--inView.carousel__panel--right'),
-          inViewCenter = _this.container.querySelector('.carousel__panel--inView.carousel__panel--center'),
-          inViewLeft = _this.container.querySelector('.carousel__panel--inView.carousel__panel--left'),
-          outView = _this.container.querySelector('.carousel__panel--outView'),
-          dur = _this.duration,
-          del = 50;
+      <!-- section footer Farwa start  -->
 
-        // Remove transition of invisible element
-        outView.classList.add('static');
+      <footer>
+        <div class="top_header">
+          <section>
+            <span><i class="fa fa-map-marker"></i></span>
+            <span> DHA Block-4, Sindh, Karachi, 75500</span>
+          </section>
+          <section>
+            <span><i class="fa fa-phone"></i></span>
+            <span>(+021) 7964 7964 </span>
+          </section>
+          <section>
+            <span><i class="fa fa-envelope"></i></span>
+            <span>Bakersbite@gmail.com</span>
+          </section>
+        </div>
+        <span class="border-shape"></span>
+        <div class="bottom_content">
+          <section>
+            <a href="https://www.facebook.com/index.php"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+            <a href="https://twitter.com/i/flow/login"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+          </section>
+          <section>
+            <a href="./index.html">Home</a>
+            <a href="#about">About us</a>
+            <a href="#location">location</a>
+            <!-- <a href="#">Retail</a> -->
+            <a href="./faq.html">FAQ</a>
+            <a href="#contact">Contact Us</a>
+          </section>
+        </div>
+        <div class="copyright">
+          Copyright © 2023 Bakerz Bite - All rights reserved
+        </div>
+      </footer>
 
-        // Set positioning of invisible element
-        setTimeout(function () {
-          outView.classList.remove('carousel__panel--left');
-          outView.classList.remove('carousel__panel--right');
-          dir == 1
-            ? outView.classList.add('carousel__panel--right')
-            : outView.classList.add('carousel__panel--left');
+      <!-- section footer Farwa end -->
 
-          // Allow transition of invisible element
-          setTimeout(function () {
-            outView.classList.remove('static');
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.bundle.min.js"></script>
 
-            // Set new classnames of all elements
+
+
+
+
+
+      <script>
+        console.clear();
+        console.log(Math.random());
+
+        var Tripousel = function (options) {
+          // because `this` is a bitch
+          var _this = this;
+
+
+          // Initialize public variables
+          _this.target = options.target || document.body;
+          _this.items = options.items || [];
+          _this.animDuration = options.duration || 500;
+          _this.container = document.createElement('div');
+          _this.center = 0;
+          _this.left = _this.items.length - 1;
+          _this.right = 1;
+
+
+          // Animate carousel movement
+          _this.slide = function (dir) {
+            var
+              inViewRight = _this.container.querySelector('.carousel__panel--inView.carousel__panel--right'),
+              inViewCenter = _this.container.querySelector('.carousel__panel--inView.carousel__panel--center'),
+              inViewLeft = _this.container.querySelector('.carousel__panel--inView.carousel__panel--left'),
+              outView = _this.container.querySelector('.carousel__panel--outView'),
+              dur = _this.duration,
+              del = 50;
+
+            // Remove transition of invisible element
+            outView.classList.add('static');
+
+            // Set positioning of invisible element
             setTimeout(function () {
-              switch (dir == 1) {
-                case true:
-                  inViewRight.classList.remove('carousel__panel--right');
-                  inViewRight.classList.add('carousel__panel--center');
+              outView.classList.remove('carousel__panel--left');
+              outView.classList.remove('carousel__panel--right');
+              dir == 1
+                ? outView.classList.add('carousel__panel--right')
+                : outView.classList.add('carousel__panel--left');
 
-                  inViewCenter.classList.remove('carousel__panel--center');
-                  inViewCenter.classList.add('carousel__panel--left');
+              // Allow transition of invisible element
+              setTimeout(function () {
+                outView.classList.remove('static');
 
-                  inViewLeft.classList.remove('carousel__panel--inView');
-                  inViewLeft.classList.add('carousel__panel--outView');
+                // Set new classnames of all elements
+                setTimeout(function () {
+                  switch (dir == 1) {
+                    case true:
+                      inViewRight.classList.remove('carousel__panel--right');
+                      inViewRight.classList.add('carousel__panel--center');
 
-                  outView.classList.remove('carousel__panel--outView');
-                  outView.classList.add('carousel__panel--inView');
-                  break;
+                      inViewCenter.classList.remove('carousel__panel--center');
+                      inViewCenter.classList.add('carousel__panel--left');
 
-                case false:
-                  inViewRight.classList.remove('carousel__panel--inView');
-                  inViewRight.classList.add('carousel__panel--outView');
+                      inViewLeft.classList.remove('carousel__panel--inView');
+                      inViewLeft.classList.add('carousel__panel--outView');
 
-                  inViewCenter.classList.remove('carousel__panel--center');
-                  inViewCenter.classList.add('carousel__panel--right');
+                      outView.classList.remove('carousel__panel--outView');
+                      outView.classList.add('carousel__panel--inView');
+                      break;
 
-                  inViewLeft.classList.remove('carousel__panel--left');
-                  inViewLeft.classList.add('carousel__panel--center');
+                    case false:
+                      inViewRight.classList.remove('carousel__panel--inView');
+                      inViewRight.classList.add('carousel__panel--outView');
 
-                  outView.classList.remove('carousel__panel--outView');
-                  outView.classList.add('carousel__panel--inView');
-                  break;
+                      inViewCenter.classList.remove('carousel__panel--center');
+                      inViewCenter.classList.add('carousel__panel--right');
+
+                      inViewLeft.classList.remove('carousel__panel--left');
+                      inViewLeft.classList.add('carousel__panel--center');
+
+                      outView.classList.remove('carousel__panel--outView');
+                      outView.classList.add('carousel__panel--inView');
+                      break;
+                  }
+                }, del)
+              }, del);
+            }, del);
+          };
+
+
+          // Update carousel content
+          _this.updateContent = function (e) {
+            var outView = _this.container.querySelector('.carousel__panel--outView');
+
+            // Set direction to 1 if clicking right or -1 if clicking left
+            if (!e) { // <- for when we need this to auto-advance through items
+              dir = 1;
+            } else {
+              dir = (e.target.className.indexOf('right') > -1) ? 1 : -1;
+            }
+
+            // Set the new indeces of each visible slide after animation
+            switch (dir == 1) {
+              case true:
+                _this.left = _this.left < _this.items.length - 1 ? _this.left + 1 : 0;
+                _this.center = _this.center < _this.items.length - 1 ? _this.center + 1 : 0;
+                _this.right = _this.right < _this.items.length - 1 ? _this.right + 1 : 0;
+
+                outView.style.backgroundImage = 'url("' + _this.items[_this.right].image + '")'
+                outView.innerHTML = _this.items[_this.right].copy;
+                break;
+
+              case false:
+                _this.left = _this.left > 0 ? _this.left - 1 : _this.items.length - 1;
+                _this.center = _this.center > 0 ? _this.center - 1 : _this.items.length - 1;
+                _this.right = _this.right > 0 ? _this.right - 1 : _this.items.length - 1;
+
+                outView.style.backgroundImage = 'url("' + _this.items[_this.left].image + '")'
+                outView.innerHTML = _this.items[_this.left].copy;
+                break;
+            }
+
+            // Send to animator with parameter of whether this is going left (-1) or right (1)
+            _this.slide(dir);
+          };
+
+
+          // Attach event listeners
+          _this.eventListeners = function (els) {
+            els.arrows.forEach(function (arrow) {
+              arrow.addEventListener('click', _this.updateContent);
+            })
+          };
+
+
+          // Create all carousel elements
+          _this.populate = function () {
+            var elements = {};
+            elements.panels = {};
+            elements.arrows = {};
+
+            // Create elements
+            elements.panels.inViewLeft = document.createElement('div');
+            elements.panels.inViewRight = document.createElement('div');
+            elements.panels.inViewCenter = document.createElement('div');
+            elements.panels.outView = document.createElement('div');
+
+            elements.arrows.left = document.createElement('div');
+            elements.arrows.right = document.createElement('div');
+
+
+            // Assign classes
+            _this.container.classList.add('carousel');
+
+            elements.panels.inViewLeft.classList.add('carousel__panel');
+            elements.panels.inViewLeft.classList.add('carousel__panel--inView');
+            elements.panels.inViewLeft.classList.add('carousel__panel--left');
+
+            elements.panels.inViewRight.classList.add('carousel__panel');
+            elements.panels.inViewRight.classList.add('carousel__panel--inView');
+            elements.panels.inViewRight.classList.add('carousel__panel--right');
+
+            elements.panels.inViewCenter.classList.add('carousel__panel');
+            elements.panels.inViewCenter.classList.add('carousel__panel--inView');
+            elements.panels.inViewCenter.classList.add('carousel__panel--center');
+
+            elements.panels.outView.classList.add('carousel__panel');
+            elements.panels.outView.classList.add('carousel__panel--outView');
+            elements.panels.outView.classList.add('carousel__panel--right');
+
+            elements.arrows.left.classList.add('carousel__arrow');
+            elements.arrows.left.classList.add('carousel__arrow--left');
+
+            elements.arrows.right.classList.add('carousel__arrow');
+            elements.arrows.right.classList.add('carousel__arrow--right');
+
+
+            // Assign inline styles and content
+            Object.assign(elements.panels.inViewLeft.style, {
+              backgroundImage: 'url("' + _this.items[_this.left].image + '")'
+            });
+            elements.panels.inViewLeft.innerHTML = _this.items[_this.left].copy;
+
+            Object.assign(elements.panels.inViewCenter.style, {
+              backgroundImage: 'url("' + _this.items[_this.center].image + '")'
+            });
+            elements.panels.inViewCenter.innerHTML = _this.items[_this.center].copy;
+
+            Object.assign(elements.panels.inViewRight.style, {
+              backgroundImage: 'url("' + _this.items[_this.right].image + '")'
+            });
+            elements.panels.inViewRight.innerHTML = _this.items[_this.right].copy;
+
+            elements.arrows.left.innerHTML = '&laquo;';
+            elements.arrows.right.innerHTML = '&raquo;';
+
+
+            // Write elements to the DOM
+            for (var type in elements) {
+              for (var el in elements[type]) {
+                _this.container.appendChild(elements[type][el]);
               }
-            }, del)
-          }, del);
-        }, del);
-      };
+            }
+
+            _this.target.appendChild(_this.container);
 
 
-      // Update carousel content
-      _this.updateContent = function (e) {
-        var outView = _this.container.querySelector('.carousel__panel--outView');
-
-        // Set direction to 1 if clicking right or -1 if clicking left
-        if (!e) { // <- for when we need this to auto-advance through items
-          dir = 1;
-        } else {
-          dir = (e.target.className.indexOf('right') > -1) ? 1 : -1;
-        }
-
-        // Set the new indeces of each visible slide after animation
-        switch (dir == 1) {
-          case true:
-            _this.left = _this.left < _this.items.length - 1 ? _this.left + 1 : 0;
-            _this.center = _this.center < _this.items.length - 1 ? _this.center + 1 : 0;
-            _this.right = _this.right < _this.items.length - 1 ? _this.right + 1 : 0;
-
-            outView.style.backgroundImage = 'url("' + _this.items[_this.right].image + '")'
-            outView.innerHTML = _this.items[_this.right].copy;
-            break;
-
-          case false:
-            _this.left = _this.left > 0 ? _this.left - 1 : _this.items.length - 1;
-            _this.center = _this.center > 0 ? _this.center - 1 : _this.items.length - 1;
-            _this.right = _this.right > 0 ? _this.right - 1 : _this.items.length - 1;
-
-            outView.style.backgroundImage = 'url("' + _this.items[_this.left].image + '")'
-            outView.innerHTML = _this.items[_this.left].copy;
-            break;
-        }
-
-        // Send to animator with parameter of whether this is going left (-1) or right (1)
-        _this.slide(dir);
-      };
+            // Send necessary elements to eventListeners
+            _this.eventListeners({
+              arrows: [
+                elements.arrows.left,
+                elements.arrows.right
+              ]
+            })
+          };
 
 
-      // Attach event listeners
-      _this.eventListeners = function (els) {
-        els.arrows.forEach(function (arrow) {
-          arrow.addEventListener('click', _this.updateContent);
-        })
-      };
+          // Aliasing
+          _this.animate = _this.updateContent;
 
 
-      // Create all carousel elements
-      _this.populate = function () {
-        var elements = {};
-        elements.panels = {};
-        elements.arrows = {};
+          // Initialize
+          _this.populate();
+        };
 
-        // Create elements
-        elements.panels.inViewLeft = document.createElement('div');
-        elements.panels.inViewRight = document.createElement('div');
-        elements.panels.inViewCenter = document.createElement('div');
-        elements.panels.outView = document.createElement('div');
-
-        elements.arrows.left = document.createElement('div');
-        elements.arrows.right = document.createElement('div');
-
-
-        // Assign classes
-        _this.container.classList.add('carousel');
-
-        elements.panels.inViewLeft.classList.add('carousel__panel');
-        elements.panels.inViewLeft.classList.add('carousel__panel--inView');
-        elements.panels.inViewLeft.classList.add('carousel__panel--left');
-
-        elements.panels.inViewRight.classList.add('carousel__panel');
-        elements.panels.inViewRight.classList.add('carousel__panel--inView');
-        elements.panels.inViewRight.classList.add('carousel__panel--right');
-
-        elements.panels.inViewCenter.classList.add('carousel__panel');
-        elements.panels.inViewCenter.classList.add('carousel__panel--inView');
-        elements.panels.inViewCenter.classList.add('carousel__panel--center');
-
-        elements.panels.outView.classList.add('carousel__panel');
-        elements.panels.outView.classList.add('carousel__panel--outView');
-        elements.panels.outView.classList.add('carousel__panel--right');
-
-        elements.arrows.left.classList.add('carousel__arrow');
-        elements.arrows.left.classList.add('carousel__arrow--left');
-
-        elements.arrows.right.classList.add('carousel__arrow');
-        elements.arrows.right.classList.add('carousel__arrow--right');
-
-
-        // Assign inline styles and content
-        Object.assign(elements.panels.inViewLeft.style, {
-          backgroundImage: 'url("' + _this.items[_this.left].image + '")'
-        });
-        elements.panels.inViewLeft.innerHTML = _this.items[_this.left].copy;
-
-        Object.assign(elements.panels.inViewCenter.style, {
-          backgroundImage: 'url("' + _this.items[_this.center].image + '")'
-        });
-        elements.panels.inViewCenter.innerHTML = _this.items[_this.center].copy;
-
-        Object.assign(elements.panels.inViewRight.style, {
-          backgroundImage: 'url("' + _this.items[_this.right].image + '")'
-        });
-        elements.panels.inViewRight.innerHTML = _this.items[_this.right].copy;
-
-        elements.arrows.left.innerHTML = '&laquo;';
-        elements.arrows.right.innerHTML = '&raquo;';
-
-
-        // Write elements to the DOM
-        for (var type in elements) {
-          for (var el in elements[type]) {
-            _this.container.appendChild(elements[type][el]);
+        var slides = [
+          {
+            copy: 'Slide 1',
+            image: 'https://plus.unsplash.com/premium_photo-1661636119130-0427b15cf821?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZGlzcG9zYWwlMjBiYWclMjBpbWFnZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60'
+          },
+          {
+            copy: 'Slide 2',
+            image: 'https://images.unsplash.com/photo-1617076678363-99dd6eb5150b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGRpc3Bvc2FsJTIwY3VwfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60'
+          },
+          {
+            copy: 'Slide 3',
+            image: 'https://plus.unsplash.com/premium_photo-1661636113368-d189ffe969ca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fGRpc3Bvc2FsJTIwY3VwfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60'
+          },
+          {
+            copy: 'Slide 4',
+            image: 'https://images.unsplash.com/photo-1534432182912-63863115e106?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGJha2VyeSUyMGNvbGxhZ2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60'
+          },
+          {
+            copy: 'Slide 5',
+            image: 'https://plus.unsplash.com/premium_photo-1661351405738-1dad29fdd44e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmFrZXJzJTIwaXRlbXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60'
           }
-        }
+        ];
 
-        _this.target.appendChild(_this.container);
+        var trip = new Tripousel({
+          target: document.querySelector('.carouselContainer'),
+          items: slides
+        });
 
-
-        // Send necessary elements to eventListeners
-        _this.eventListeners({
-          arrows: [
-            elements.arrows.left,
-            elements.arrows.right
-          ]
-        })
-      };
-
-
-      // Aliasing
-      _this.animate = _this.updateContent;
-
-
-      // Initialize
-      _this.populate();
-    };
-
-    var slides = [
-      {
-        copy: 'Slide 1',
-        image: 'https://plus.unsplash.com/premium_photo-1661636119130-0427b15cf821?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZGlzcG9zYWwlMjBiYWclMjBpbWFnZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60'
-      },
-      {
-        copy: 'Slide 2',
-        image: 'https://images.unsplash.com/photo-1617076678363-99dd6eb5150b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGRpc3Bvc2FsJTIwY3VwfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60'
-      },
-      {
-        copy: 'Slide 3',
-        image: 'https://plus.unsplash.com/premium_photo-1661636113368-d189ffe969ca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fGRpc3Bvc2FsJTIwY3VwfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60'
-      },
-      {
-        copy: 'Slide 4',
-        image: 'https://images.unsplash.com/photo-1534432182912-63863115e106?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGJha2VyeSUyMGNvbGxhZ2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60'
-      },
-      {
-        copy: 'Slide 5',
-        image: 'https://plus.unsplash.com/premium_photo-1661351405738-1dad29fdd44e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmFrZXJzJTIwaXRlbXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60'
-      }
-    ];
-
-    var trip = new Tripousel({
-      target: document.querySelector('.carouselContainer'),
-      items: slides
-    });
-
-    var rotateNTimes = 5;
-    var rotate = setInterval(function () {
-      if (rotateNTimes) {
-        trip.animate();
-        --rotateNTimes;
-      } else {
-        clearInterval(rotate);
-      }
-    }, 2000);
-  </script>
+        var rotateNTimes = 5;
+        var rotate = setInterval(function () {
+          if (rotateNTimes) {
+            trip.animate();
+            --rotateNTimes;
+          } else {
+            clearInterval(rotate);
+          }
+        }, 2000);
+      </script>
 
 </body>
 
